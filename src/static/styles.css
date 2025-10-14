@@ -157,8 +157,8 @@ footer {
 }
 
 .participants-list {
-  list-style-type: disc;
-  margin-left: 22px;
+  list-style-type: none;
+  margin-left: 0;
   margin-bottom: 0;
   color: #444;
   font-size: 15px;
@@ -167,4 +167,30 @@ footer {
 .participants-list li {
   margin-bottom: 4px;
   padding-left: 2px;
+}
+
+/* Delete button next to participant email */
+.participant-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.participant-email {
+  flex: 1 1 auto;
+  word-break: break-all;
+}
+
+.delete-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.delete-participant:hover {
+  background-color: rgba(198,40,40,0.08);
 }
